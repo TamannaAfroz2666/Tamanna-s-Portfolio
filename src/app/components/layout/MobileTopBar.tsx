@@ -10,7 +10,7 @@ export default function MobileTopbar() {
                 <div className="flex items-center gap-3">
                     <div className="relative h-9 w-9 overflow-hidden rounded-full border border-white/10">
 
-                        <Image src="/demo.png"
+                        <Image src="/profilePic.png"
                             alt="Avatar"
                             fill className="object-cover"
 
@@ -18,7 +18,7 @@ export default function MobileTopbar() {
 
                     </div>
                     <div className="leading-tight">
-                        <p className="text-sm font-semibold">{profile.name} 11111111111111111111111111111111</p>
+                        <p className="text-sm font-semibold">{profile.name} </p>
                         <p className="text-xs text-zinc-400">{profile.role}</p>
                     </div>
                 </div>

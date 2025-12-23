@@ -3,32 +3,30 @@ import { Code2, LayoutGrid, LucideIcon, ShieldCheck } from "lucide-react";
 
 export const profile = {
   name: "Tamanna Afroz",
-  role: "Full stack Developer ",
+  role: "Software Engineer ",
   residence: "Bangladesh",
   city: "Dhaka",
   experience: "1.5+ years",
   email: "afroztamanna66@gmail.com",
   phone: "+8801318917873",
-  location: "Dhaka, BD",
+  location: "677A, Adabor, Dhaka,Bangladesh",
   availability: "Available Remote",
   rating: "Top Rated",
 };
 
 export const hero = {
   badge: "Building modern web experiences",
-  titleA: "Discover my Amazing",
-  titleB: "Portfolio",
-  titleC: "Space!",
+  titleA: "Software Engineer",
   subtitle:
-    "I build design mockups, dashboards and full-stack products with Next.js + TypeScript.",
+    "I design and develop high-performance web applications with modern backend, clean frontend, and production-ready architecture.",
   ctas: {
-    primary: { label: "Explore Now", href: "#projects" },
+    primary: { label: "Explore Now", href: "https://github.com/TamannaAfroz2666" },
     secondary: { label: "Contact Me", href: "#contact" },
   },
-  tags: ["Next.js", "TypeScript", "Tailwind", "UI/UX"],
+  tags: ["Express.js", "Nest.js", "PostgreSQL", "Prisma", 'Docker', "GraphQL", "MongoDB", "React.js", "Vue.js", "Next.js", "TypeScript", "Unit Test"],
   // public/ folder assets:
   backgroundImage: "/hero-bg.jpg",
-  personImage: "/hero-person.png",
+  personImage: "/profilePic.png",
   avatar: "/avatar.jpg",
 };
 
@@ -48,10 +46,9 @@ export const skills = [
 ];
 
 export const stats = [
-  { value: "10+", label: "Years Experience" },
-  { value: "143", label: "Completed Projects" },
-  { value: "114", label: "Happy Customers" },
-  { value: "20+", label: "Honors & Awards" },
+  { value: "1.5+", label: "Years Experience" },
+  { value: "10", label: "Completed Projects" },
+
 ];
 
 export type ServiceItem = {
@@ -84,35 +81,86 @@ export type ProjectItem = {
   tags: string[];
   liveUrl?: string;
   codeUrl?: string;
+  image: string;
 };
 
 export const projects: ProjectItem[] = [
   {
-    title: "Portfolio Landing",
-    desc: "A clean, fast portfolio with responsive layout and smooth UX.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    liveUrl: "#",
+    title: "Hiwork",
+    desc: "Hiwork is an open job portal site in popular in Japan. They offer world-class different kinds of jobs for different countries basis.",
+    tags: ["Nest.js", "PostgreSQL", "Prisma", "Docker", "Next.js", "JavaScript", "Tailwind"],
+    liveUrl: "https://www.hiwork.jp/en",
+    image: "/logoHiwork.png",
     codeUrl: "#",
   },
   {
-    title: "Dashboard UI",
-    desc: "Admin dashboard UI with cards, tables, and charts-ready layout.",
-    tags: ["UI", "Components", "Responsive"],
+    title: "Sawari Air Lines",
+    desc: "MySawariAirLines is a travel booking platform that allows users to search, compare, and purchase airline tickets and hotel bookings through a seamless and user-friendly interface",
+    tags: ["React.js", "SASS", "Redux", "Frontend"],
     liveUrl: "#",
+    image: "/white.jpg",
     codeUrl: "#",
   },
   {
-    title: "E-commerce UI",
-    desc: "Product grid, details page layout and modern checkout flow mockup.",
-    tags: ["Design", "UX", "Frontend"],
-    liveUrl: "#",
+    title: "Ambor",
+    desc: "The Ambor name is a popular e-commerce site. Ambor's mission is to create a new collection of dresses, for girls, women, and Gents who are looking online or offline for fabric and unique collections. ",
+    tags: ["React.js", "Vue.js", "SASS", "Redux", "Frontend"],
+    image: "/ambor.png",
+    liveUrl: "https://ambor.com.bd/",
     codeUrl: "#",
+  },
+  // {
+  //   title: "API Client App",
+  //   desc: "Frontend integration sample with auth, loading states and errors.",
+  //   tags: ["REST", "Auth", "State"],
+  //   image: "/white.jpg",
+  //   liveUrl: "#",
+  //   codeUrl: "#",
+  // },
+];
+
+export type TimelineItem = {
+  title: string;
+  desc: string;
+  role?: string;
+  date?: string;
+  cta?: string | null;
+};
+
+export const education : TimelineItem[] = [
+   {
+    title: "Daffodil International University",
+    role: "Graduated",
+    date: "Dec 2019 - Dec 2023",
+    desc: "Bachelor's Degree in Software Engineering Daffodil International University, Dhaka, Bangladesh",
+    // cta: "Bachelor's",
   },
   {
-    title: "API Client App",
-    desc: "Frontend integration sample with auth, loading states and errors.",
-    tags: ["REST", "Auth", "State"],
-    liveUrl: "#",
-    codeUrl: "#",
+    title: "Software Architecture Course",
+    role: "Student",
+    date: "jan 2022 - apr 2022",
+    desc: "Software Architectures and design",
+    cta: null,
   },
+
+];
+
+
+
+export const work  : TimelineItem[] = [
+    {
+    title: "B-cause., Inc ",
+    role: "Junior Software Developer",
+    date: "Mar 2024 - Oct 2025",
+    desc: "Working on multiple projects with different teams using Nest.js,Prisma, Docker, PostgreSQL, React ecosystem, Ant, Event Driven Programming, Cache, etc. ",
+    cta: null,
+  },
+  {
+    title: "Sawari Overseas",
+    role: "Front-End Developer",
+    date: "Sept 2022 - Oct 2023",
+    desc: "Building out Sawari’s technology stack underpinning the future of the alternatives industry using PostgreSQL, Cypress, React ecosystem, Event Driven Programming,  Mui, SASS, Redux, etc.  ",
+    // cta: "RECOMMENDATION",
+  },
+
 ];

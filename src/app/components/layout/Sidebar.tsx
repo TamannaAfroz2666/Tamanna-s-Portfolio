@@ -91,9 +91,10 @@ import { hero, profile, } from "../data/portfolioData";
 import { Check, Download, Linkedin, Dribbble, Github, Twitter } from "lucide-react";
 // import TopProfile from "../sections/SideBar/TopProfile";
 import SkillsWithLanguage from "../sections/SideBar/SkillsWithLanguage";
-import SideBarBottomPhase from "../sections/SideBar/sideBarBottomPhase";
+// import SideBarBottomPhase from "../sections/SideBar/sideBarBottomPhase";
 import SideBarBottom from "../sections/SideBar/SidebarBottom";
 import TopProfile from "../sections/SideBar/TopProfile";
+import SocialBar from "../sections/SideBar/SocialBar";
 
 
 
@@ -101,28 +102,50 @@ import TopProfile from "../sections/SideBar/TopProfile";
 export default function ProfileCard() {
 
 
-  const getResume = () => {
-
-  }
 
   return (
     <section className="mx-auto w-full max-w-sm">
       <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-6 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.9)]">
-        {/* top soft glow */}
+
         <div className="pointer-events-none absolute -top-24 left-1/2 h-56 w-56 -translate-x-1/2 rounded-full bg-yellow-500/10 blur-3xl" />
-        <TopProfile />
-        <div className="my-6 border-t border-white/10" />
 
-        {/* language circles (optional section like 2nd) */}
-        <SkillsWithLanguage />
-        <div className="my-6 border-t border-white/10" />
-        <SideBarBottom />
+        <div
+          className="
+        relative
+        h-[calc(100vh-140px)]
+        overflow-y-auto
+        pr-2
+
+        [scrollbar-width:none]
+        [&::-webkit-scrollbar]:w-0
+        [&::-webkit-scrollbar]:h-0
+      "
+        >
+
+          <div className="sticky top-0 z-[999] bg-black-20 backdrop-blur pb-4">
+            <TopProfile />
+          </div>
+
+          <div className="my-6 border-t border-white/10" />
 
 
+          <div className="space-y-4 pb-24">
+
+            <SkillsWithLanguage />
+            <div className="my-6 border-t border-white/10" />
+            <SideBarBottom />
+          </div>
 
 
+          <div className="sticky bottom-0 z-[999] bg-black-400 backdrop-blur-lg pt-2">
+            <SocialBar />
+
+          </div>
+        </div>
       </div>
     </section>
+
+
   );
 }
 

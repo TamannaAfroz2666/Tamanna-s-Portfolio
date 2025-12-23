@@ -6,7 +6,41 @@ export default function SkillsWithLanguage() {
 
     return (
         <div>
-            <div className="grid grid-cols-3 gap-3 text-center">
+
+            <div>
+                <div className="mt-5 space-y-3 ">
+                    <div className="grid grid-cols-2 items-center">
+                        <span className="text-sm font-semibold text-white/45">
+                            Residence:
+                        </span>
+                        <span className="text-sm text-right text-white/45">
+                            Bangladesh
+                        </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 items-center">
+                        <span className="text-sm font-semibold text-white/45">
+                            City:
+                        </span>
+                        <span className="text-sm text-right text-white/45">
+                            Dhaka
+                        </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 items-center">
+                        <span className="text-sm font-semibold text-white/45">
+                            Experience:
+                        </span>
+                        <span className="text-sm text-right text-white/45">
+                            1.5+ years
+                        </span>
+                    </div>
+                </div>
+
+                {/* Divider */}
+                <div className="mt-5 h-px w-full bg-white/10 " />
+            </div>
+            <div className="grid grid-cols-3 gap-3 text-center pt-5">
                 <StatCircle label="English" value={100} />
                 <StatCircle label="Bangla" value={100} />
                 <StatCircle label="Hindi" value={70} />
@@ -61,7 +95,7 @@ function StatCircle({ label, value }: { label: string; value: number }) {
                         cy={size / 2}
                         r={radius}
                         fill="transparent"
-                        stroke="rgb(250 204 21)" // tailwind yellow-400
+                        stroke="#0cc9de52" // tailwind yellow-400
                         strokeWidth={stroke}
                         strokeLinecap="round"
                         strokeDasharray={circumference}
