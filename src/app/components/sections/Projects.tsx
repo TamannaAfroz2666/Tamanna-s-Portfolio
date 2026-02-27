@@ -32,7 +32,7 @@ export default function Projects() {
               <div className="flex items-start justify-between gap-4">
                 <div className="w-full">
                   <p className="text-sm font-semibold">{p.title}</p>
-                  <p className="mt-2 text-sm text-zinc-300 lg:w-[200px] text-pretty xl:w-[300px]">{p.desc}</p>
+                  <p className="mt-2 text-sm text-wrap text-zinc-400 lg:w-[200px]  xl:w-[300px]">{p.desc}</p>
                 </div>
 
                 <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs text-zinc-300 lg:right-20 relative xl:right-0 relative">

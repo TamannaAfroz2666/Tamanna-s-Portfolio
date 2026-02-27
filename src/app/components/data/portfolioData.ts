@@ -23,7 +23,7 @@ export const hero = {
     primary: { label: "Explore Now", href: "https://github.com/TamannaAfroz2666" },
     secondary: { label: "Contact Me", href: "#contact" },
   },
-  tags: ["Express.js", "Nest.js", "PostgreSQL", "Prisma", 'Docker', "GraphQL", "MongoDB", "React.js", "Vue.js", "Next.js", "TypeScript", "Unit Test"],
+  tags: ["Express.js", "Nest.js", "PostgreSQL", "MongoDB", "Prisma", 'Docker', "GraphQL",  "React.js", "Vue.js", "Next.js", "Redux", "TypeScript", "Unit Test"],
   // public/ folder assets:
   backgroundImage: "/hero-bg.jpg",
   personImage: "/profilePic.png",
@@ -109,14 +109,14 @@ export const projects: ProjectItem[] = [
     liveUrl: "https://ambor.com.bd/",
     codeUrl: "#",
   },
-  // {
-  //   title: "API Client App",
-  //   desc: "Frontend integration sample with auth, loading states and errors.",
-  //   tags: ["REST", "Auth", "State"],
-  //   image: "/white.jpg",
-  //   liveUrl: "#",
-  //   codeUrl: "#",
-  // },
+  {
+    title: "Movie Platfrom",
+    desc: "ReelBox is a full-stack movie discovery platform that integrates external movie data APIs with a custom backend system to provide users with personalized movie, TV show, and series recommendations. It also includes a weekly automated email digest system that sends top-rated and trending content directly to subscribers with secure unsubscribe functionality.",
+    tags: ["Express.js", "Next.js","PostgreSQL", "Redux"],
+    image: "/white.jpg",
+    liveUrl: "https://movie-update-frontend.vercel.app/",
+    codeUrl: "https://github.com/TamannaAfroz2666/movie-update-platform",
+  },
 ];
 
 export type TimelineItem = {
